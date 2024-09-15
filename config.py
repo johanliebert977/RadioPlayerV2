@@ -23,15 +23,15 @@ import re
 class Config:
     ADMIN = os.environ.get("ADMINS", "1316963576")
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", 12345))
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP = os.environ.get("LOG_GROUP", "")
+    API_ID = int(os.environ.get("API_ID", 23744491))
+    CHAT = int(os.environ.get("CHAT", "-1002118359848"))
+    LOG_GROUP = os.environ.get("LOG_GROUP", "-1002118359848")
     if LOG_GROUP:
         LOG_GROUP = int(LOG_GROUP)
     else:
         LOG_GROUP = None
-    STREAM_URL = os.environ.get("STREAM_URL", "https://radioindia.net/radio/hungamanow/icecast.audio")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-    SESSION = os.environ.get("SESSION_STRING", "")
+    STREAM_URL = os.environ.get("STREAM_URL", "")
+    API_HASH = os.environ.get("API_HASH", "23988a755839feae93c3c3320bc0807f")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7213018996:AAFQvdBK0MMZs6RLPiR0BaJyGn2SNYdgQVU") 
+    SESSION = os.environ.get("SESSION_STRING", "BQFqT-sAhPyr7NjGBC16maWomVgRNiTulavUpM92HwMuiSPUsRM6CBzm6n4oeV8h2dlKagWfiyC6H4evMAPFaAbofztEKFfqi47dF2XCzeIoemxQNd2MBPgBl8dfGXb0001v5I5vu7_eaGmZElSaN08oWW_sQK53nZafGOcCjK-VM3ZVPxVbgYOjOHYy36iz3UONtg6lz7c9Tbaopb_cOp2VpGXdiXtGLYy4Rv13vyON88fcvD-KlUSTFkS1f1b-z4vzCXzpSASW0aO-VuONOdYogNA7kKjNUvptPrdzi6L-t4nxRJ6uBp8KMLNp5KG5sQuN7kgffBnYRMH_Nf37DI11uWhpowAAAAGnWKzYAA")
 
